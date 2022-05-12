@@ -2,12 +2,13 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 // import Image from 'next/image'
 import styles from '../../styles/Home.module.css'
-import { Nav } from '../../src/Nav/Nav';
+// import { Nav } from '../../src/Nav/Nav';
 import Link from 'next/link';
 
 const Home: NextPage = () => {
 
-  const appUrl = process.env.NEXT_PUBLIC_APP_BASE_URL as string;
+  const appUrl = 'http://localhost:3000';
+  // const appUrl = process.env.NEXT_PUBLIC_APP_BASE_URL as string;
 
   return (
     <div className={ styles.container }>
@@ -18,7 +19,6 @@ const Home: NextPage = () => {
       </Head>
 
       <main className={ styles.main }>
-
 
         {/*<Nav/>*/}
 

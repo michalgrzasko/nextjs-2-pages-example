@@ -5,7 +5,8 @@ import Link from 'next/link';
 
 const AboutUs: NextPage = () => {
 
-  const appUrl = process.env.NEXT_PUBLIC_APP_BASE_URL as string;
+  const appUrl = 'http://localhost:3000';
+  // const appUrl = process.env.NEXT_PUBLIC_APP_BASE_URL as string;
 
   return (
     <div className={ styles.container }>
