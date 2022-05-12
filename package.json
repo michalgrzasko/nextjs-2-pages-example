@@ -3,8 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "dev-landing": "cp .env ./landing && next dev ./landing -p 5000",
+    "dev": "next dev & yarn dev-landing",
+    "build-landing": "cp .env ./landing && next build ./landing && next export ./landing",
+    "build": "next build & yarn build-landing",
     "start": "next start",
     "lint": "next lint"
   },
